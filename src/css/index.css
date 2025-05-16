@@ -48,3 +48,10 @@ button {
         transition: background-color 0.25s ease-in-out;
     }
 }
+
+.openDialog {
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+    background-color: #03471d;
+}
