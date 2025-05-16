@@ -10,3 +10,41 @@
     font-size: 6rem;
     cursor: pointer;
 }
+
+main {
+    height: 100dvh;
+    display: grid;
+    place-items: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.gap-16 {
+    gap: 16px;
+}
+
+h2 {
+    color: #fff;
+    text-align: center;
+}
+
+button {
+    padding: 12px 24px;
+    border-radius: 50px;
+    background-color: #937406;
+    margin: auto;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #fff;
+
+    &:hover {
+        background-color: #5e4a02;
+        transition: background-color 0.25s ease-in-out;
+    }
+}
