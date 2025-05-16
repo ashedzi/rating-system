@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import Dialog from './components/Dialog';
+import StarRating from './components/StarRating';
+import { useState } from "react";
 
 function App() {
+      const[isVisible, setVisibility] = useState(false);
+  
+      const modalVisibility = () => {
+          setVisibility(!isVisible)
+      }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div class container>
+      <main>
+        <StarRating />
+         <Dialog 
+          modalVisibility={modalVisibility} 
+          visibilityClass={isVisible ? "visible" : "hidden"} 
+        />
+      </main>
+        <button className="openDialog" onClick={modalVisibility}>Open dialog</button>
     </div>
   );
 }
