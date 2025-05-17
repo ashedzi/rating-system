@@ -1,5 +1,7 @@
+## Using 'useState' hooks in React
 
-**Rating system** This is a symple attemp to create a star rating system and a toggle button for revleaving and concealing a dialog box using 'useState'hooks in react .
+**Rating system** This is a symple attempt to create a star rating system and a toggle button for revleaving 
+and concealing a dialog box using 'useState'hooks in react .
 ---
 
 ## Features
